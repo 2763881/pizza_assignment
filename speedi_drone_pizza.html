@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/pizza.css">
+        <meta charset="utf-8">
+        <title>SpeediDrone Pizza
+        </title>
+        <style>
+            textarea{width: 300px; height: 150px;}
+            .form{align-content: center;}
+        </style>
+    </head>
+    <body>
+        <h3>"Speedi-Drone Pizza" Custom Pizza Order Form</h3>
+        <p>Design your very own pizza with this handy online order form.<br> We'll have it dropped in your lap in 10 minutes or less or our name isn't<br> <b><i>Speedi- Drone Pizza!</i></b></p>
+            <form action="http://forms.miketackett.dx.am/pizzaOrder.php" method="get">
+        <fieldset>Pizza Details<br><br>
+          Quantity:<br>
+            <div class="form">
+                <input type="number" name="qty"></div>
+            <br><br>Size: &nbsp;
+            <select name="size">
+                <option value="Personal">Personal 4 Slices</option>
+                <option value="Small"> Small 6 Slices</option>
+                <option value="Medium">Medium 8 Slices</option>
+                <option value="Large">Large 10 Slices</option>
+                <option value="Glutton">Glutton 12 Slices</option>
+            </select>
+            <fieldset label="base">Bases (Choose One):<br>
+            <input type="radio" value="Red Sauce" name="base" /> Red Sauce
+            <input type="radio" value="White Sauce" name=base/> White Sauce
+            <input type="radio" value="BBQ Sauce" name="base"/> BBQ Sauce
+            <input type="radio" value="Garlic Rub" name="base"/> Garlic Rub
+            <input type="radio" value="Pesto Sauce" name="base"/> Pesto Base<br>
+                <input type="radio" value="Castor Oil" name="base"/>Castor Oil</fieldset>
+            <fieldset label="Cheese">Cheeses: (Choose as many as you want)<br>
+            <input type="checkbox" name="cheese[]" value="Mozzarella" checked="checked"/>Mozzarella
+            <input type="checkbox" name="cheese[]" value="Parmesan"/>Parmesan
+            <input type="checkbox" name="cheese[]" value="Gorgonzola"/>Gorgonzola
+            <input type="checkbox" name="cheese[]" value="Asiago"/>Asiago
+                <input type="checkbox" name="cheese[]" value="Limburger"/> Limburger</fieldset>
+            <fieldset label="Meat">Meats(Choose as many as you want):
+            <input type="checkbox" name="meat[]" value="Pepperoni" checked="checked"/>Pepperoni
+            <input type="checkbox" name="meat[]" value="Italian Sausage"/>Italian Sausage
+            <input type="checkbox" name="meat[]" value="Canadian Bacon"/> Canadian Bacon
+            <input type="checkbox" name="meat[]" value="Ground Beef"/>Ground Beef
+                <br><input type="checkbox" name="meat[]" value="Limburger"/>Limburger</fieldset>
+            <fieldset label="Veggies">Veggies(Choose as many as you want):
+            <input type="checkbox" name="veggies[]" value="Green Peppers"/> Green Peppers
+            <input type="checkbox" name="veggies[]" value="Mushrooms"/> Mushrooms
+            <input type="checkbox" name="veggies[]" value="Onion"/> Onion
+            <input type="checkbox" name="veggies[]" value="Pineapple"/>Pineapple
+                <input type="checkbox" name="veggies[]" value="Jalapenos"/> Jalapenos</fieldset></fieldset>
+            <fieldset>Customer Information
+            <fieldset>Important
+            <p>Enter a valid email address. Receipts and junk mail will be sent to this address:</p>
+            Email:<br>
+                <input type="emailaddress" name="emailaddress" required></fieldset>
+            <br>Name:<br>
+            <input type="text" name="customername" size="80px"><br>
+            <br> Address:<br>
+            <input type="text" name="address"><br>
+            <br>City<br>
+            <input type="text" name="city"><br>
+                <br>Phone:<br>
+                <input type="tel" name="phone"></fieldset>
+            <p>Tell us how we're doing. If we like your comments we'll send you a free Speedi Drone plus toy!</p>
+        <textarea name="comments" maxlength="400px">No More than 250 Characters long--but be sure to use lots of superlatives.</textarea><br>
+            <button type="submit">Submit</button>&nbsp;&nbsp;
+            <button type="reset">Reset</button>
+        </form>
+    </body>
+</html>
